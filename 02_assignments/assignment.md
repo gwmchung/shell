@@ -66,7 +66,7 @@ cat movies/hanger_games/movie_4.txt | awk '{print $4}'
 3. Write the secret password in your own version of this markdown file in your forked repo.
 
 1. Paper Rings 
-2. 10
+2. 10 
 3. Meets
 4. and
 5. Lucky
@@ -74,7 +74,7 @@ cat movies/hanger_games/movie_4.txt | awk '{print $4}'
 
 **What is the secret password?**
 ```
-Taylor Swift (assuming clue #2 is referring to the number 1)
+Paper Rings 10 Meets and Lucky the
 ```
 
 |Criteria|Complete|Incomplete|
