@@ -30,15 +30,51 @@ You are stuck in a virtual room and can only leave if you figure out the passwor
 ## Instructions
 1. Fork this Shell learning module repository following these [instructions](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#setting-up)
 2. Use your bash skills (such as `cd`, `cat`, etc.) to figure out what the secret password is! You will be exploring the `clues` directory in your bash terminal.
+# clue 1
+cd clues
+cd food/cake
+cat chocolate_cake.txt
+cat red_velvet_cake.txt
+cat vanilla_cake.txt
+# look for inedible ingredient, found in vanilla_cake.txt
+
+# clue 2 
+cd clues/shows/friends
+for i in {1..10}; do echo season_$i; ls season_$i | wc -l; done;
+# look for the one with 18
+
+# clue 3
+cd clues/shows/friends
+cat season_6/ep_21.txt
+# alternate 
+cat season_6/ep_21.txt | awk '{print $5}'
+
+# clue 4
+cat movies/space_wars/fifth_movie.txt  | awk '{print $5}'
+
+# clue 5
+cat albums/red/song_1.txt 
+cat albums/red/song_2.txt
+cat albums/red/song_3.txt
+cat albums/red/song_4.txt
+cat albums/red/song_5.txt
+# found song with 4:00 duration in song_5.txt
+
+# clue 6
+cat movies/hanger_games/movie_4.txt | awk '{print $4}'
+
 3. Write the secret password in your own version of this markdown file in your forked repo.
+
+1. Paper Rings 
+2. 10
+3. Meets
+4. and
+5. Lucky
+6. the
 
 **What is the secret password?**
 ```
-Your answer here...
-
-
-
-
+Taylor Swift (assuming clue #2 is referring to the number 1)
 ```
 
 |Criteria|Complete|Incomplete|
